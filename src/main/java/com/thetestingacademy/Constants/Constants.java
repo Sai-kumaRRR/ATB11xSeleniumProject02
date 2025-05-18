@@ -1,4 +1,4 @@
-package com.testingacademy.Constants;
+package com.thetestingacademy.Constants;
 
 public class Constants {
 

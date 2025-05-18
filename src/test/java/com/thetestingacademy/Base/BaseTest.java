@@ -1,21 +1,22 @@
-package com.testingacademy.Base;
+package com.thetestingacademy.Base;
 
-import com.testingacademy.Utils.WebDriverManager;
+import com.thetestingacademy.Utils.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
-protected WebDriver driver;
+    public  WebDriver driver;
 
-@BeforeClass
+    @BeforeClass
     public void setup() {
         driver = WebDriverManager.getDriver();
 
     }
+
     @AfterClass
     public void tearDown() {
-        if(driver != null)
+        if (driver != null)
             driver.quit();
     }
 }

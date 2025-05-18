@@ -1,4 +1,4 @@
-package com.testingacademy.PageObjects;
+package com.thetestingacademy.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,8 +17,8 @@ public class GoogleHomePage {
 
     }
 
-    public void searchFor(String text) {
-        searchBox.sendKeys(text);
+    public void searchFor(String Query) {
+        searchBox.sendKeys(Query);
         searchBox.submit();
     }
 
